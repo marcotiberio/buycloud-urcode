@@ -3,7 +3,7 @@
 */
 
 // directory where images of Clouds are
-var assetDirectory = '/';
+var assetDirectory = '/buycloud-urcode/';
 
 var cloudData = data;
 
