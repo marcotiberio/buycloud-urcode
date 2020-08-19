@@ -3,7 +3,7 @@
 */
 
 // directory where images of Clouds are
-var assetDirectory = '/';
+var assetDirectory = '../img/';
 
 var cloudData = data;
 
@@ -12,7 +12,7 @@ var buyClouds = {
 	'backgroundColor' : '#4467A7', // Background color
 	'quantity' : 30, // The amount of Clouds to be drawn
 	'radius' : 10, // fallback Radius of Clouds
-	'velocityScale' : .3, // Max. initial velocity (px/frame)
+	'velocityScale' : .01, // factor for velocity | default : .01
 	'expectedVmax' : 2, 
 	'safeareaFactor' : 1.4, // How far the clouds can drift off-screen, before returning to the oppposite side (recommended values between 1.4 and 2.0)
 	'hitzoneDisplay' : false, // For debugging: dipslay ellipse geometry [true | false]
@@ -20,6 +20,7 @@ var buyClouds = {
 	'targetElement' : function(){ return document.getElementById(this.targetElementId) },
 	'targetElementDimensions' : function(){ return [this.targetElement().clientWidth, this.targetElement().clientHeight] },
 	'Clouds' : [], // Cloud objects
+	'newClouds' : [], // temporary array, this is where new Clouds are born
 
 	'date' : new Date().getTime()
 };
@@ -48,6 +49,62 @@ function setup() {
 function draw() {
 	background( buyClouds.backgroundColor);
 
+
+	var i = 0;
+	while ( i < buyClouds.Clouds.length ) {
+		var wolkje_1 = buyClouds.Clouds[i];
+
+		var j = i + 1;
+		while ( j < buyClouds.Clouds.length ) {
+			var wolkje_2 = buyClouds.Clouds[j];
+			var deltaVector = createVector(wolkje_1.location.x - wolkje_2.location.x, wolkje_1.location.y - wolkje_2.location.y );	
+			var distance = deltaVector.mag();
+
+			function returnLargest(array) {
+				var values = [ array[0].radius, array[1].radius ];
+				var value = max(values);
+				
+				return array[ values.indexOf(value) ];
+			}
+
+			if ( distance < (wolkje_1.radius + wolkje_2.radius ) && distance !== 0){
+
+				var newLocation = createVector( (wolkje_1.location.x + wolkje_2.location.x)*0.5, (wolkje_1.location.y + wolkje_2.location.y)*0.5 );
+				var newVelocity = createVector( (wolkje_1.velocity.x + wolkje_2.velocity.x)*1, (wolkje_1.velocity.y + wolkje_2.velocity.y)*1 );
+				var newRadius = wolkje_1.radius + wolkje_2.radius;
+
+				var largestCloud = returnLargest([ wolkje_1, wolkje_2]);	
+				console.log( largestCloud )
+
+				// var location = createVector( largestCloud.x0, largestCloud.y0 );
+				var location = newLocation;
+				// var velocity = createVector( largestCloud.vx, largestCloud.vy );
+				var velocity = newVelocity;
+
+				var image = largestCloud.image; // Load the image (object!)
+
+				// var radius = cloud.radius ? cloud.radius : largestCloud.radius // If undefined, fallback to global default
+				var radius = newRadius;
+				var t0 = largestCloud.t0; // already set
+
+				var newCloud = new Cloud( location, velocity, radius, image, t0 );
+				buyClouds.newClouds.push( newCloud );
+
+				buyClouds.Clouds.splice(j, 1);
+				buyClouds.Clouds.splice(i, 1);
+			}
+
+			j++;
+		}
+		
+		i++;
+	}
+
+	buyClouds.newClouds.map( newCloud => {
+		buyClouds.Clouds.push(newCloud);
+	})
+	buyClouds.newClouds = [];
+
 	buyClouds.Clouds.map( cloud => {
 		cloud.update();
 		cloud.display();
@@ -70,13 +127,15 @@ class Cloud {
 		this.location = location; // x0, y0
 		this.velocity = velocity;
 		this.radius = radius;
+		this.image = imageObj;
+		this.t0 = t0;
 
 		var newLocation = createVector();
 		var safearea = buyClouds.safeareaFactor * radius;
 
 
 		this.update = function() {
-			var age = (buyClouds.date + millis()) / 100;
+			var age = (buyClouds.date + millis()) * buyClouds.velocityScale;
 
 			// from example
 			// newLocation.x = ( location.x + velocity.x * age ) % width;
@@ -86,7 +145,7 @@ class Cloud {
 			newLocation.x = ( -safearea + location.x + velocity.x * age ) % (width + safearea);
 			newLocation.y = ( -safearea + location.y + velocity.y * age ) % (height + safearea);
 			
-
+			this.location = newLocation;
 		}
 
 		this.display = function() {
