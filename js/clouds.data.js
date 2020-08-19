@@ -3,7 +3,7 @@
 */
 
 // directory where images of Clouds are
-var assetDirectory = '/buycloud-urcode/';
+var assetDirectory = 'https://github.com/marcotiberio/buycloud-urcode/';
 
 var cloudData = data;
 
