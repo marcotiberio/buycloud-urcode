@@ -52,5 +52,14 @@ var data = [
 		"radius" : 50,
 		"image" : "cert6.png",
 		"t0" : 1594818061200
+	},
+	{
+		"x0" : 0,
+		"y0" : 0,
+		"vx" : 1,
+		"vy" : 1,
+		"radius" : 100,
+		"image" : "cert7.png",
+		"t0" : 1594818061200
 	}
 ];
