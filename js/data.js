@@ -7,5 +7,5 @@ var data = [
         "radius" : 40,
         "image" : "Certificate-1-EmileAlmekinders.png",
         "t0" : 1594818061200
-    }
+    },
 ];
