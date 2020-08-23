@@ -4,8 +4,8 @@ var data = [
         "y0" : 55,
         "vx" : 0.1,
         "vy" : 0.2,
-        "radius" : 20,
-        "image" : "certificate-1-EmileAlmekinders.png",
+        "radius" : 35,
+        "image" : "Certificate-1-EmileAlmekinders.png",
         "t0" : 1594818061200
     },
     {
@@ -13,7 +13,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.1,
         "vy" : 0.2,
-        "radius" : 10,
+        "radius" : 25,
         "image" : "certificate-2-MarcoTiberio.png",
         "t0" : 1594818061200
     },
@@ -22,7 +22,7 @@ var data = [
         "y0" : 100,
         "vx" : 0.1,
         "vy" : 0.2,
-        "radius" : 15,
+        "radius" : 20,
         "image" : "certificate-3-CarolineNevejan.png",
         "t0" : 1594818061200
     }
