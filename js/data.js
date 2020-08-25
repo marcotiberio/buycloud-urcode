@@ -29,7 +29,7 @@ var data = [
     {
         "x0" : 100,
         "y0" : 100,
-        "vx" : 0.3,
+        "vx" : 1,
         "vy" : 0.2,
         "radius" : 28,
         "image" : "certificate-4-NoaJansma-04.png",
