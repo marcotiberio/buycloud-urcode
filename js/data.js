@@ -25,6 +25,15 @@ var data = [
         "radius" : 20,
         "image" : "certificate-3-CarolineNevejan.png",
         "t0" : 1594818061200
+    },
+    {
+        "x0" : 100,
+        "y0" : 100,
+        "vx" : 0.3,
+        "vy" : 0.2,
+        "radius" : 28,
+        "image" : "certificate-4-Noajansma.png",
+        "t0" : 1594818061200
     }
 
 ];
