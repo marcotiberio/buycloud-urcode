@@ -32,7 +32,7 @@ var data = [
         "vx" : 0.3,
         "vy" : 0.2,
         "radius" : 28,
-        "image" : "certificate-4-Noajansma.png",
+        "image" : "certificate-4-NoaJansma-04.png",
         "t0" : 1594818061200
     }
 
