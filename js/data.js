@@ -53,6 +53,16 @@ var data = [
         "image" : "certificate-6-ReinJansma-06.png",
         "t0" : 1594818061200   
      
+    },
+    {
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.1,
+        "vy" : 0.1,
+        "radius" : 14,
+        "image" : "certificate-7-TeddyCherim-07.png",
+        "t0" : 1594818061200   
+     
     }
     
 
