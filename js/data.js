@@ -47,8 +47,8 @@ var data = [
     {
         "x0" : 1,
         "y0" : 1,
-        "vx" : 0.3,
-        "vy" : 0.2,
+        "vx" : 0.1,
+        "vy" : 0.1,
         "radius" : 16,
         "image" : "certificate-6-ReinJansma-06.png",
         "t0" : 1594818061200
