@@ -51,6 +51,9 @@ var data = [
         "vy" : 0.1,
         "radius" : 16,
         "image" : "certificate-6-ReinJansma-06.png",
-        "t0" : 1594818061200
+        "t0" : 1594818061200   
+     
+    }
+    
 
 ];
