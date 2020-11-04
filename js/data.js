@@ -60,7 +60,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.1,
         "vy" : 0.1,
-        "radius" : 6,
+        "radius" : 7,
         "image" : "Certificate-8-KoendeBoer-06.png",
         "t0" : 1594818061200   
      
@@ -86,8 +86,8 @@ var data = [
      
     },
     {
-        "x0" : 1,
-        "y0" : 1,
+        "x0" : 55,
+        "y0" : 55,
         "vx" : 0.1,
         "vy" : 0.1,
         "radius" : 8,
