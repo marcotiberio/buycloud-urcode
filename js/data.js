@@ -84,6 +84,16 @@ var data = [
         "image" : "certificate-10-JasmineKarimova-08.png",
         "t0" : 1594818061200   
      
+    },
+    {
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.1,
+        "vy" : 0.1,
+        "radius" : 8,
+        "image" : "certificate-11-NinaSomer-09.png",
+        "t0" : 1594818061200   
+     
     }
     
 
