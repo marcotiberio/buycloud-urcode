@@ -94,6 +94,16 @@ var data = [
         "image" : "certificate-11-NinaSomer-09.png",
         "t0" : 1594818061200   
      
+    },
+    {
+        "x0" : 55,
+        "y0" : 55,
+        "vx" : 0.1,
+        "vy" : 0.1,
+        "radius" : 8,
+        "image" : "certificate-12-KirikoMechanicus-10.png",
+        "t0" : 1594818061200   
+     
     }
     
 
