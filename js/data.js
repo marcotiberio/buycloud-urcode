@@ -100,7 +100,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.1,
         "vy" : 0.1,
-        "radius" : 11,
+        "radius" : 13,
         "image" : "certificate-12-KirikoMechanicus-10.png",
         "t0" : 1594818061200   
      
