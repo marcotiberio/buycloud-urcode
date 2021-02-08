@@ -125,16 +125,16 @@ var data = [
     //     "t0" : 1594818061200   
      
     // },
-    // {
-    //     "x0" : 1,
-    //     "y0" : 1,
-    //     "vx" : 0.5,
-    //     "vy" : 0.5,
-    //     "radius" : 15,
-    //     "image" : "certificateMaartjeWortel-12.png",
-    //     "t0" : 1594818061200   
+    {
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.5,
+        "vy" : 0.5,
+        "radius" : 15,
+        "image" : "certificateMaartjeWortel-12.png",
+        "t0" : 1594818061200   
      
-    // },
+    },
     {
         "x0" : 1,
         "y0" : 1,
