@@ -136,13 +136,13 @@ var data = [
      
     },
     {
-        "x0" : 1,
-        "y0" : 1,
+        "x0" : 10,
+        "y0" : 10,
         "vx" : 0.5,
         "vy" : 0.5,
         "radius" : 15,
         "image" : "certificateFemkeHeemskerk-13.png",
-        "t0" : 1594818061200   
+        "t0" : 1594817061200   
      
     }
     
