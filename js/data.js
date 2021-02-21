@@ -3,20 +3,20 @@ var data = [
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.2,
-        "vy" : 0.2,
+        "vy" : 0.3,
         "radius" : 15,
-        "image" : "certificateFemkeHeemskerk-13.png",
-        "t0" : 1594817061200   
+        "image" : "CertificateKurokawa.png",
+        "t0" : 1694818061200   
      
     },
     {
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.2,
-        "vy" : 0.3,
+        "vy" : 0.2,
         "radius" : 15,
-        "image" : "CertificateKurokawa.png",
-        "t0" : 1694818061200   
+        "image" : "certificateFemkeHeemskerk-13.png",
+        "t0" : 1594817061200   
      
     },
     {
