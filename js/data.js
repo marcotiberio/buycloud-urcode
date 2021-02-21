@@ -12,8 +12,8 @@ var data = [
     {
         "x0" : 1,
         "y0" : 1,
-        "vx" : 0.5,
-        "vy" : 0.5,
+        "vx" : 0.2,
+        "vy" : 0.3,
         "radius" : 15,
         "image" : "CertificateKurokawa.png",
         "t0" : 1694818061200   
