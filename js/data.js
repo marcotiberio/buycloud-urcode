@@ -4,7 +4,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.2,
         "vy" : 0.3,
-        "radius" : 16,
+        "radius" : 20,
         "image" : "CERTIFIED-11Ute.png",
         "t0" : 1694818061200   
      
