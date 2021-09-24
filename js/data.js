@@ -4,7 +4,7 @@ var data = [
         "y0" : 53,
         "vx" : 0.1,
         "vy" : 0.3,
-        "radius" : 18,
+        "radius" : 30,
         "image" : "CERTIFIED-3.21AQMU",
         "t0" : 1694818061200   
      
