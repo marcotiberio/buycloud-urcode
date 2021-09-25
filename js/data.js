@@ -12,7 +12,7 @@ var data = [
     {
         "x0" : 20,
         "y0" : 20,
-        "vx" : 0.1,
+        "vx" : 0.2,
         "vy" : 0.5,
         "radius" : 20,
         "image" : "CERTIFIED-3.22-evanhaagen.png",
