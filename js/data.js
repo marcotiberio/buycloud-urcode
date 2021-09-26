@@ -1,11 +1,11 @@
 var data = [
     
     {
-        "x0" : 10,
-        "y0" : 20,
-        "vx" : 0.1,
-        "vy" : 0.1,
-        "radius" : 15,
+        "x0" : 40,
+        "y0" : 10,
+        "vx" : 0.5,
+        "vy" : 0.2,
+        "radius" : 20,
         "image" : "Certificate-322-evanhaagen.png",
         "t0" : 1694818061200   
      
