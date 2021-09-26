@@ -1,10 +1,10 @@
 var data = [
     {
-        "x0" : 20,
+        "x0" : 10,
         "y0" : 20,
         "vx" : 0.2,
         "vy" : 0.5,
-        "radius" : 20,
+        "radius" : 15,
         "image" : "CERTIFIED-3.22-evanhaagen.png",
         "t0" : 1694818061200   
      
