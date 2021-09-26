@@ -16,7 +16,7 @@ var data = [
         "vx" : 0.1,
         "vy" : 0.1,
         "radius" : 15,
-        "image" : "CERTIFIED-3.22-evanhaagen.png",
+        "image" : "Certificate-322-evanhaagen.png",
         "t0" : 1694818061200   
      
     },
