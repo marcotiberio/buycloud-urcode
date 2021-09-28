@@ -14,9 +14,9 @@ var data = [
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.2,
-        "vy" : 0.3,
-        "radius" : 20,
-        "image" : "Cloudcertificate-732-karuntjin.png",
+        "vy" : 0.4,
+        "radius" : 22,
+        "image" : "CERTIFIED-jantromp.png",
         "t0" : 1694818061200   
      
     },
@@ -24,9 +24,9 @@ var data = [
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.2,
-        "vy" : 0.4,
-        "radius" : 22,
-        "image" : "CERTIFIED-jantromp.png",
+        "vy" : 0.3,
+        "radius" : 20,
+        "image" : "Cloudcertificate-732-karuntjin.png",
         "t0" : 1694818061200   
      
     },
