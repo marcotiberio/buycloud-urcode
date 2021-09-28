@@ -21,6 +21,16 @@ var data = [
      
     },
     {
+        "x0" : 2,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.4,
+        "radius" : 22,
+        "image" : "CERTIFIED-jantromp.png",
+        "t0" : 1694818061200   
+     
+    },
+    {
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.2,
