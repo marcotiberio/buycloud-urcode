@@ -9,6 +9,15 @@ var data = [
         "image" : "Certificate-322-evanhaagen.png",
         "t0" : 1694818061200   
      
+    },{
+        "x0" : 2,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.4,
+        "radius" : 20,
+        "image" : "CERTIFIED-MinorTransmedia.png",
+        "t0" : 1694818061200   
+     
     },
     {
         "x0" : 1,
