@@ -18,6 +18,15 @@ var data = [
         "image" : "CERTIFIED-MinorTransmedia.png",
         "t0" : 1694818061200   
      
+    },{
+        "x0" : 3,
+        "y0" : 2,
+        "vx" : 0.4,
+        "vy" : 0.5,
+        "radius" : 21,
+        "image" : "Cert-IneGevers-16.png",
+        "t0" : 1694818061200   
+     
     },
     {
         "x0" : 1,
