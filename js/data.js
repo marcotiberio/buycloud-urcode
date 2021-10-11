@@ -14,7 +14,7 @@ var data = [
         "y0" : 2,
         "vx" : 0.4,
         "vy" : 0.5,
-        "radius" : 21,
+        "radius" : 16,
         "image" : "Cert-IneGevers-16.png",
         "t0" : 1694818061200   
      
