@@ -1,6 +1,15 @@
 var data = [
     
     {
+        "x0" : 2,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.4,
+        "radius" : 20,
+        "image" : "CERTIFIED-MinorTransmedia.png",
+        "t0" : 1694818061200   
+     
+    },{
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.3,
@@ -25,15 +34,6 @@ var data = [
         "vy" : 0.1,
         "radius" : 15,
         "image" : "Certificate-322-evanhaagen.png",
-        "t0" : 1694818061200   
-     
-    },{
-        "x0" : 2,
-        "y0" : 1,
-        "vx" : 0.3,
-        "vy" : 0.4,
-        "radius" : 20,
-        "image" : "CERTIFIED-MinorTransmedia.png",
         "t0" : 1694818061200   
      
     },
