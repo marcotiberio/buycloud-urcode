@@ -2,11 +2,11 @@ var data = [
     
     {
         "x0" : 3,
-        "y0" : 2,
-        "vx" : 0.2,
-        "vy" : 0.3,
-        "radius" : 14,
-        "image" : "CERTIFIED-YU.png",
+        "y0" : 1,
+        "vx" : 0.6,
+        "vy" : 0.5,
+        "radius" : 17,
+        "image" : "CERTIFIED-82-jona.png",
         "t0" : 1694818061200   
      
     },{
