@@ -1,11 +1,11 @@
 var data = [
     
     {
-        "x0" : 3,
+        "x0" : 1,
         "y0" : 1,
-        "vx" : 0.6,
+        "vx" : 0.3,
         "vy" : 0.5,
-        "radius" : 17,
+        "radius" : 10,
         "image" : "CERTIFIED-82-jona.png",
         "t0" : 1694818061200   
      
