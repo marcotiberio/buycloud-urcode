@@ -5,7 +5,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.4,
         "vy" : 0.2,
-        "radius" : 15,
+        "radius" : 20,
         "image" : "CERTIFIED-82-jona.png",
         "t0" : 1694818061200   
      
