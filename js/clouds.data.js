@@ -7,6 +7,7 @@ var assetDirectory = 'https://marcotiberio.github.io/buycloud-urcode/';
 
 var cloudData = data;
 
+// init p5.js object
 var buyClouds = {
 	'targetElementId' : 'p5', // Container element id for p5 canvas (now: 'div#p5')
 	'backgroundColor' : '#4467A7', // Background color
@@ -25,39 +26,39 @@ var buyClouds = {
 	'date' : new Date().getTime()
 };
 
+
 function setup() {
-	createCanvas( buyClouds.targetElementDimensions()[0], buyClouds.targetElementDimensions()[1] ).parent(buyClouds.targetElementId);
+  createCanvas(buyClouds.targetElementDimensions()[0],
+               buyClouds.targetElementDimensions()[1])
+    .parent(buyClouds.targetElementId);
 
-	cloudData.map( (cloud, index) => {
+  // loop over data.js list
+  cloudData.map((cloud, index) => {
 
-		var location = createVector( cloud.x0, cloud.y0 );
-		var velocity = createVector( cloud.vx, cloud.vy );
-
-		var path = assetDirectory.concat( cloud.image ); // Get the paths
+		var path = assetDirectory.concat(cloud.image); // Get the paths
 		var image = loadImage(path); // Load the image
 
 		var radius = cloud.radius ? cloud.radius : buyClouds.radius // If undefined, fallback to global default
 		var t0 = cloud.t0; // already set
 
-		var newCloud = new Cloud( location, velocity, radius, image, t0 );
-
-		buyClouds.Clouds.push( newCloud );
+		var newCloud = new Cloud(location, velocity, radius, image, t0 );
+		buyClouds.Clouds.push(newCloud);
 	})
 
 }
 
 function draw() {
-	background( buyClouds.backgroundColor);
-
+	background(buyClouds.backgroundColor);
 
 	var i = 0;
-	while ( i < buyClouds.Clouds.length ) {
+	while (i < buyClouds.Clouds.length) {
 		var wolkje_1 = buyClouds.Clouds[i];
 
 		var j = i + 1;
-		while ( j < buyClouds.Clouds.length ) {
+		while (j < buyClouds.Clouds.length) {
 			var wolkje_2 = buyClouds.Clouds[j];
-			var deltaVector = createVector(wolkje_1.location.x - wolkje_2.location.x, wolkje_1.location.y - wolkje_2.location.y );	
+			var deltaVector = createVector(wolkje_1.location.x - wolkje_2.location.x,
+                                     wolkje_1.location.y - wolkje_2.location.y);	
 			var distance = deltaVector.mag();
 
 			function returnLargest(array) {
@@ -67,14 +68,16 @@ function draw() {
 				return array[ values.indexOf(value) ];
 			}
 
-			if ( distance < (wolkje_1.radius + wolkje_2.radius ) && distance !== 0){
+      // this handles the cloud eats cloud feature
+			if (distance < (wolkje_1.radius + wolkje_2.radius ) && distance !== 0) {
 
-				var newLocation = createVector( (wolkje_1.location.x + wolkje_2.location.x)*0.5, (wolkje_1.location.y + wolkje_2.location.y)*0.5 );
-				var newVelocity = createVector( (wolkje_1.velocity.x + wolkje_2.velocity.x)*1, (wolkje_1.velocity.y + wolkje_2.velocity.y)*1 );
+				var newLocation = createVector((wolkje_1.location.x + wolkje_2.location.x)*0.5,
+                                       (wolkje_1.location.y + wolkje_2.location.y)*0.5);
+				var newVelocity = createVector((wolkje_1.velocity.x + wolkje_2.velocity.x)*1,
+                                       (wolkje_1.velocity.y + wolkje_2.velocity.y)*1);
 				var newRadius = wolkje_1.radius + wolkje_2.radius;
 
-				var largestCloud = returnLargest([ wolkje_1, wolkje_2]);	
-				console.log( largestCloud )
+				var largestCloud = returnLargest([wolkje_1, wolkje_2]);	
 
 				// var location = createVector( largestCloud.x0, largestCloud.y0 );
 				var location = newLocation;
@@ -87,8 +90,8 @@ function draw() {
 				var radius = newRadius;
 				var t0 = largestCloud.t0; // already set
 
-				var newCloud = new Cloud( location, velocity, radius, image, t0 );
-				buyClouds.newClouds.push( newCloud );
+				var newCloud = new Cloud(location, velocity, radius, image, t0);
+				buyClouds.newClouds.push(newCloud);
 
 				buyClouds.Clouds.splice(j, 1);
 				buyClouds.Clouds.splice(i, 1);
@@ -100,12 +103,14 @@ function draw() {
 		i++;
 	}
 
-	buyClouds.newClouds.map( newCloud => {
+  // push new clouds (eat process) to main cloud list,
+  // empty newClouds list
+	buyClouds.newClouds.map(newCloud => {
 		buyClouds.Clouds.push(newCloud);
 	})
 	buyClouds.newClouds = [];
 
-	buyClouds.Clouds.map( cloud => {
+	buyClouds.Clouds.map(cloud => {
 		cloud.update();
 		cloud.display();
 	})
@@ -154,10 +159,10 @@ class Cloud {
 			var imgHeight = imageObj.height / 300 * radius;
 
 			// show the image
-			image( imageObj, newLocation.x - imgWidth/2, newLocation.y - imgHeight/2, imgWidth, imgHeight);
+			image(imageObj, newLocation.x - imgWidth/2, newLocation.y - imgHeight/2, imgWidth, imgHeight);
 
 			// show the ellipse 'hitzone' for debugging
-			if ( buyClouds.hitzoneDisplay === true ) {
+			if (buyClouds.hitzoneDisplay === true ) {
 				fill(128);
 				ellipse(newLocation.x, newLocation.y, radius, radius)
 			};
