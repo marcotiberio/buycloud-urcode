@@ -6,6 +6,15 @@ var data = [
         "vx" : 0.4,
         "vy" : 0.2,
         "radius" : 20,
+        "image" : "CERTIFICATES-oekiewalvis.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.4,
+        "vy" : 0.2,
+        "radius" : 20,
         "image" : "CERTIFICATES-rein.png",
         "t0" : 1694818061200   
      
