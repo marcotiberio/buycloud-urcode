@@ -10,7 +10,7 @@ var cloudData = data;
 var buyClouds = {
 	'targetElementId' : 'p5', // Container element id for p5 canvas (now: 'div#p5')
 	'backgroundColor' : '#4467A7', // Background color
-	'quantity' : 30, // The amount of Clouds to be drawn
+  'quantity' : cloudData.length, // The amount of Clouds to be drawn
 	'radius' : 10, // fallback Radius of Clouds
 	'velocityScale' : .01, // factor for velocity | default : .01
 	'expectedVmax' : 2, 
