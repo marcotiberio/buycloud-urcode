@@ -2,15 +2,6 @@ var data = [
     
     {
         "x0" : 1,
-        "y0" : 2,
-        "vx" : 0.2,
-        "vy" : 0.3,
-        "radius" : 20,
-        "image" : "CERTIFICATES-rein.png",
-        "t0" : 1594818061200   
-     
-    },{
-        "x0" : 1,
         "y0" : 1,
         "vx" : 0.4,
         "vy" : 0.2,
