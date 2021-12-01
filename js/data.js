@@ -30,7 +30,7 @@ var data = [
     },{
         "x0" : 1,
         "y0" : 1,
-        "vx" : 0.4,
+        "vx" : 0.2,
         "vy" : 0.2,
         "radius" : 20,
         "image" : "CERTIFIED-82-jona.png",
