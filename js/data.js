@@ -6,6 +6,15 @@ var data = [
         "vx" : 0.4,
         "vy" : 0.2,
         "radius" : 20,
+        "image" : "CERTIFICATE-maartje-femke.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.4,
+        "vy" : 0.2,
+        "radius" : 20,
         "image" : "CERTIFICATES-oekiewalvis.png",
         "t0" : 1694818061200   
      
@@ -127,16 +136,6 @@ var data = [
      
     },
     {
-        "x0" : 1,
-        "y0" : 1,
-        "vx" : 0.2,
-        "vy" : 0.2,
-        "radius" : 15,
-        "image" : "certificateFemkeHeemskerk-13.png",
-        "t0" : 1594817061200   
-     
-    },
-    {
         "x0" : 55,
         "y0" : 55,
         "vx" : 0.1,
@@ -249,16 +248,6 @@ var data = [
         "vy" : 0.1,
         "radius" : 15,
         "image" : "certificate-14-ThomasErdbrink-12.png",
-        "t0" : 1694818061200   
-     
-    },
-    {
-        "x0" : 1,
-        "y0" : 1,
-        "vx" : 0.5,
-        "vy" : 0.5,
-        "radius" : 15,
-        "image" : "certificateMaartjeWortel-12.png",
         "t0" : 1694818061200   
      
     }
