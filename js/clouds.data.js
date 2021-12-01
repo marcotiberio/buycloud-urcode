@@ -34,6 +34,8 @@ function setup() {
 
   // loop over data.js list
   cloudData.map((cloud, index) => {
+		var location = createVector(cloud.x0, cloud.y0);
+		var velocity = createVector(cloud.vx / 10, cloud.vy / 10);
 
 		var path = assetDirectory.concat(cloud.image); // Get the paths
 		var image = loadImage(path); // Load the image
