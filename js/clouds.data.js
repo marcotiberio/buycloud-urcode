@@ -43,7 +43,7 @@ function setup() {
 		var radius = cloud.radius ? cloud.radius : buyClouds.radius // If undefined, fallback to global default
 		var t0 = cloud.t0; // already set
 
-		var newCloud = new Cloud(location, velocity, radius, image, t0 );
+		var newCloud = new Cloud(location, velocity, radius, image, path, t0);
 		buyClouds.Clouds.push(newCloud);
 	})
 
@@ -59,6 +59,7 @@ function draw() {
 		var j = i + 1;
 		while (j < buyClouds.Clouds.length) {
 			var wolkje_2 = buyClouds.Clouds[j];
+
 			var deltaVector = createVector(wolkje_1.location.x - wolkje_2.location.x,
                                      wolkje_1.location.y - wolkje_2.location.y);	
 			var distance = deltaVector.mag();
@@ -81,18 +82,16 @@ function draw() {
 
 				var largestCloud = returnLargest([wolkje_1, wolkje_2]);	
 
-				// var location = createVector( largestCloud.x0, largestCloud.y0 );
 				var location = newLocation;
-				// var velocity = createVector( largestCloud.vx, largestCloud.vy );
 				var velocity = newVelocity;
 
 				var image = largestCloud.image; // Load the image (object!)
+        var path = largestCloud.path;
 
-				// var radius = cloud.radius ? cloud.radius : largestCloud.radius // If undefined, fallback to global default
 				var radius = newRadius;
 				var t0 = largestCloud.t0; // already set
 
-				var newCloud = new Cloud(location, velocity, radius, image, t0);
+				var newCloud = new Cloud(location, velocity, radius, image, path, t0);
 				buyClouds.newClouds.push(newCloud);
 
 				buyClouds.Clouds.splice(j, 1);
@@ -112,6 +111,20 @@ function draw() {
 	})
 	buyClouds.newClouds = [];
 
+
+  // -- filter out duplicated clouds
+  const cloud_imgs = buyClouds.Clouds.map(cloud => cloud.path)
+  const cloud_filtered = buyClouds.Clouds.filter((item, index) => {
+    if (!cloud_imgs.includes(item.path, index +1)) {
+      return item
+    }
+  })
+
+  buyClouds.Clouds = cloud_filtered
+  console.log('cloud-filtered =>', [cloud_filtered.length, buyClouds.Clouds.length]) 
+  // --
+
+  // render all images
 	buyClouds.Clouds.map(cloud => {
 		cloud.update();
 		cloud.display();
@@ -124,7 +137,7 @@ function windowResized() {
 
 
 class Cloud {
-	constructor( location, velocity, radius, imageObj, t0 ) {
+	constructor( location, velocity, radius, imageObj, path, t0 ) {
 		// location : 2d vector
 		// velocity : 2d vector
 		// radius : int
@@ -135,6 +148,7 @@ class Cloud {
 		this.velocity = velocity;
 		this.radius = radius;
 		this.image = imageObj;
+    this.path = path;
 		this.t0 = t0;
 
 		var newLocation = createVector();
