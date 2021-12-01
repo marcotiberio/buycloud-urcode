@@ -121,7 +121,6 @@ function draw() {
   })
 
   buyClouds.Clouds = cloud_filtered
-  console.log('cloud-filtered =>', [cloud_filtered.length, buyClouds.Clouds.length]) 
   // --
 
   // render all images
