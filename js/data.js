@@ -2,6 +2,15 @@ var data = [
     
     {
         "x0" : 1,
+        "y0" : 2,
+        "vx" : 0.3,
+        "vy" : 0.2,
+        "radius" : 20,
+        "image" : "CERTIFIED-CO9-3ChristopWieland",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 1,
         "y0" : 1,
         "vx" : 0.4,
         "vy" : 0.2,
