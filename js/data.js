@@ -3,6 +3,15 @@ var data = [
     {
         "x0" : 3,
         "y0" : 1,
+        "vx" : 0.4,
+        "vy" : 0.3,
+        "radius" : 20,
+        "image" : "CERTIFIED-SandraSydow.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 3,
+        "y0" : 1,
         "vx" : 0.2,
         "vy" : 0.4,
         "radius" : 20,
