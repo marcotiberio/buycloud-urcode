@@ -6,7 +6,7 @@ var data = [
         "vx" : 0.2,
         "vy" : 0.4,
         "radius" : 20,
-        "image" : "CERTIFIED-14-UliSchuster",
+        "image" : "CERTIFIED-14-UliSchuster.png",
         "t0" : 1694818061200   
      
     },{
