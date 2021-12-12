@@ -1,6 +1,15 @@
 var data = [
     
     {
+        "x0" : 3,
+        "y0" : 1,
+        "vx" : 0.2,
+        "vy" : 0.4,
+        "radius" : 20,
+        "image" : "CERTIFIED-14-UliSchuster",
+        "t0" : 1694818061200   
+     
+    },{
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.3,
