@@ -19,21 +19,21 @@ var data = [
         "t0" : 1694818061200   
      
     },{
-        "x0" : 1,
+        "x0" : 2,
         "y0" : 1,
-        "vx" : 0.3,
-        "vy" : 0.4,
-        "radius" : 25,
-        "image" : "CERTIFIED-co1023ClaudiaKursawe.png",
+        "vx" : 0.4,
+        "vy" : 0.2,
+        "radius" : 20,
+        "image" : "CERTIFIED-CO9-3ChristopWieland.png",
         "t0" : 1694818061200   
      
     },{
         "x0" : 1,
         "y0" : 1,
         "vx" : 0.3,
-        "vy" : 0.2,
-        "radius" : 20,
-        "image" : "CERTIFIED-CO9-3ChristopWieland.png",
+        "vy" : 0.4,
+        "radius" : 25,
+        "image" : "CERTIFIED-co1023ClaudiaKursawe.png",
         "t0" : 1694818061200   
      
     },{
