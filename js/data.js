@@ -1,6 +1,15 @@
 var data = [
     
     {
+        "x0" : 2,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.3,
+        "radius" : 20,
+        "image" : "CERTIFIED-14-240-700-lucas+julia.png",
+        "t0" : 1694818061200   
+     
+    },{
         "x0" : 3,
         "y0" : 1,
         "vx" : 0.4,
