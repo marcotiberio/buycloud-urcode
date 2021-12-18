@@ -1,6 +1,33 @@
 var data = [
     
     {
+        "x0" : 1,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.3,
+        "radius" : 30,
+        "image" : "CERTIFIED-co1041-Kathrin.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 2,
+        "y0" : 1,
+        "vx" : 0.3,
+        "vy" : 0.3,
+        "radius" : 25,
+        "image" : "CERTIFIED-co1032-Felixhoffmann.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 3,
+        "y0" : 1,
+        "vx" : 0.4,
+        "vy" : 0.3,
+        "radius" : 20,
+        "image" : "CERTIFIED-co1042-ChristophWiesner.png",
+        "t0" : 1694818061200   
+     
+    },{
         "x0" : 2,
         "y0" : 1,
         "vx" : 0.3,
