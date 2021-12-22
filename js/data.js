@@ -23,7 +23,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.2,
         "vy" : 0.2,
-        "radius" : 20,
+        "radius" : 25,
         "image" : "CERTIFIED-3.3-1-027-maxvanderwal.png",
         "t0" : 1694818061200   
      
@@ -41,7 +41,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.3,
         "vy" : 0.3,
-        "radius" : 30,
+        "radius" : 35,
         "image" : "CERTIFIED-co1041-Kathrin.png",
         "t0" : 1694818061200   
      
