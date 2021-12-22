@@ -178,7 +178,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.2,
         "vy" : 0.3,
-        "radius" : 20,
+        "radius" : 40,
         "image" : "Cloudcertificate-732-karuntjin.png",
         "t0" : 1694818061200   
      
