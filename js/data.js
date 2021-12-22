@@ -14,7 +14,7 @@ var data = [
         "y0" : 1,
         "vx" : 0.2,
         "vy" : 0.2,
-        "radius" : 32,
+        "radius" : 35,
         "image" : "CERTIFIED-CL220-899x1024-sachabronwasser.png",
         "t0" : 1694818061200   
      
