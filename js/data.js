@@ -6,6 +6,15 @@ var data = [
         "vx" : 0.4,
         "vy" : 0.3,
         "radius" : 30,
+        "image" : "CERTIFIED-7.1-1mettenkosters.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 2,
+        "y0" : 3,
+        "vx" : 0.4,
+        "vy" : 0.3,
+        "radius" : 30,
         "image" : "CERTIFIED-noaleylq.png",
         "t0" : 1694818061200   
      
