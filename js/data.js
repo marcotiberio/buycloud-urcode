@@ -1,6 +1,15 @@
 var data = [
     
     {
+        "x0" : 3,
+        "y0" : 4,
+        "vx" : 0.3,
+        "vy" : 0.3,
+        "radius" : 30,
+        "image" : "CERTIFIED-14-10-2050jennybanka.png",
+        "t0" : 1694818061200   
+     
+    },{
         "x0" : 2,
         "y0" : 3,
         "vx" : 0.4,
