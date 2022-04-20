@@ -2,6 +2,15 @@ var data = [
     
     {
         "x0" : 3,
+        "y0" : 3,
+        "vx" : 0.2,
+        "vy" : 0.3,
+        "radius" : 30,
+        "image" : "AstridvandenBerg-13.png",
+        "t0" : 1694818061200   
+     
+    },{
+        "x0" : 3,
         "y0" : 4,
         "vx" : 0.3,
         "vy" : 0.3,
